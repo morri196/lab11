@@ -1,11 +1,4 @@
-package co.grandcircus.lab11;
-
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class CarLot {
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner scnr = new Scanner(System.in);
 		int selection = 0;
@@ -23,7 +16,7 @@ public class CarLot {
 			System.out.println((i + 1) + "." +list.get(i));
 		}
 		
-		System.out.print("\n\nWhich car would you like? (1-6)");
+		System.out.print("\n\nWhich car would you like to look up? (1-6)");
 		selection = scnr.nextInt();
 		
 		if ( selection == 1) {
