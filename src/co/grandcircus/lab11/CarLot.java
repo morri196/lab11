@@ -26,11 +26,30 @@ public class CarLot {
 		System.out.print("\n\nWhich car would you like? (1-6)");
 		selection = scnr.nextInt();
 		
-		for (int i = 0; i < list.size(); i++) {
-		selection = i;
+		if ( selection == 1) {
+			System.out.println(list.get(0));
+			}
+		else if (selection == 2) {
+		        System.out.println(list.get(1));
+		    }
+		else if (selection == 3) {
+				System.out.println(list.get(2));
+			}
+		else if (selection == 4) {
+				System.out.println(list.get(3));
+			}
+		else if (selection == 5) {
+				System.out.println(list.get(4));
+			}
+		else if (selection == 6) {
+				System.out.println(list.get(5));
+			}
+		else {
+			System.out.println("Please make a valid selection 1-6. ");
 		}
 		
-		System.out.println(selection);
+		System.out.println("\nWould you like to remove this car, add to car list, or replace this car? ");
+		
 
 	}
 }
